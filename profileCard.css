@@ -1,0 +1,122 @@
+*{
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.profile-card{
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.profile-card::before{
+  content: "";
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color: rgb(248, 173, 33);
+  top: 0;
+  left:0;
+  border-radius: 24px 24px 0 0;
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(248, 173, 33);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .profile-picture{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+.profile-card .text-data{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+.text-data .name{
+  font-size: 22px;
+  font-weight: 500;
+}
+.text-data .job{
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-card .media-button{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-button .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.profile-card .buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button{
+  margin : 0 10px;
+  padding: 8px 24px;
+  background-color: rgb(248, 173, 33);
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.buttons .button:hover{
+  background-color: rgb(206, 135, 1);
+}
+.profile-card .analytics{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.analytics .data{
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+.data:last-child{
+  border-right: none;
+}
+.data i{
+  font-size: 18px;
+  margin-right: 6px;
+}
